@@ -31,7 +31,7 @@ export const products: Product[] = [
     category: 'Electronics',
     rating: 4.2,
     reviews: 128,
-    image: 'https://picsum.photos/seed/cctv/400/400',
+    image: '/images/cctv.png',
     description: 'High-definition CCTV security camera with night vision, motion detection, and remote viewing capability. Perfect for home and office surveillance.',
     specifications: {
       Resolution: '1080p Full HD',
@@ -51,7 +51,7 @@ export const products: Product[] = [
     category: 'Electricals',
     rating: 4.0,
     reviews: 95,
-    image: 'https://picsum.photos/seed/extension/400/400',
+    image: '/images/extensionboard.png',
     description: 'Premium extension board with multiple plug sockets, USB charging ports, and surge protection. Ideal for home and office use.',
     specifications: {
       Sockets: '6 + 2 USB',
@@ -71,7 +71,7 @@ export const products: Product[] = [
     category: 'Electricals',
     rating: 3.8,
     reviews: 67,
-    image: 'https://picsum.photos/seed/cord/400/400',
+    image: '/images/extensioncord.png',
     description: 'Heavy-duty extension cord with 3 sockets and individual switches. PVC insulated copper wire for safe and reliable power distribution.',
     specifications: {
       Sockets: '3',
@@ -91,11 +91,11 @@ export const products: Product[] = [
     category: 'Electronics',
     rating: 4.3,
     reviews: 142,
-    image: 'https://picsum.photos/seed/adapter/400/400',
+    image: '/images/laptopadapter.png',
     description: 'Universal laptop adapter compatible with most major brands. Features over-voltage and short-circuit protection for safe charging.',
     specifications: {
       Output: '19V 3.42A',
-      'Power': '65W',
+      Power: '65W',
       Compatibility: 'Universal',
       Protection: 'OVP/SCP/OCP',
       Connector: '8 Interchangeable Tips',
@@ -111,7 +111,7 @@ export const products: Product[] = [
     category: 'Home Application',
     rating: 4.5,
     reviews: 89,
-    image: 'https://picsum.photos/seed/heater/400/400',
+    image: '/images/waterheater.png',
     description: '25-liter storage water heater with glass-lined tank and energy-efficient design. Provides hot water for the whole family.',
     specifications: {
       Capacity: '25 Liters',
@@ -131,7 +131,7 @@ export const products: Product[] = [
     category: 'Hardware',
     rating: 4.1,
     reviews: 56,
-    image: 'https://picsum.photos/seed/brush/400/400',
+    image: '/images/paintbrush.png',
     description: 'Professional paint brush set with 5 brushes of different sizes. High-quality bristles for smooth and even application.',
     specifications: {
       Pieces: '5 Brushes',
@@ -151,7 +151,7 @@ export const products: Product[] = [
     category: 'Motor Pump & Submersible',
     rating: 4.4,
     reviews: 73,
-    image: 'https://picsum.photos/seed/pump/400/400',
+    image: '/images/pump.png',
     description: '1HP submersible pump for borewells. Heavy-duty cast iron construction with high discharge capacity for agricultural and domestic use.',
     specifications: {
       Power: '1 HP',
@@ -171,7 +171,7 @@ export const products: Product[] = [
     category: 'Electricals',
     rating: 4.0,
     reviews: 44,
-    image: 'https://picsum.photos/seed/wire/400/400',
+    image: '/images/wireroll.png',
     description: '90-meter roll of high-quality copper wire with PVC insulation. Suitable for house wiring and electrical installations.',
     specifications: {
       Length: '90m',

@@ -32,7 +32,7 @@ export default function CheckoutPage() {
   const update = (field: string, value: string) =>
     setForm((prev) => ({ ...prev, [field]: value }));
 
-  const upiQrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=egnaromart@okaxis&pn=EgnaroMart&am=${total}`;
+  const upiQrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=samsonelectronics50@oksbi&pn=EgnaroMart&am=${total}`;
   const whatsappUrl = `https://wa.me/919442581506?text=Hi%20I%20paid%20for%20my%20order.%20Name:%20${encodeURIComponent(form.fullName)}%20Total:%20₹${total}`;
 
   const handleSubmit = async (e: FormEvent) => {

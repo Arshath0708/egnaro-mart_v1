@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
+import logo from '../assets/logo_f.jpeg'; // ✅ your new logo
 
 export default function Footer() {
   return (
     <footer className="bg-[#232f3e] text-gray-300">
+
       {/* Newsletter */}
       <div className="bg-[#37475a] py-6">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center gap-3">
@@ -26,27 +28,21 @@ export default function Footer() {
 
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
         {/* About */}
         <div>
-          <div className="flex items-center gap-1 mb-4">
-            <div className="w-6 h-6 rounded-full bg-[#FF9900] flex items-center justify-center">
-              <span className="text-[#131921] font-extrabold text-[10px]">E</span>
-            </div>
-            <span className="text-lg font-bold text-white">
-              EGNARO<span className="text-[#FF9900]">MART</span>
-            </span>
+          {/* ✅ NEW LOGO */}
+          <div className="mb-4">
+            <img 
+              src={logo} 
+              alt="Egnaro Mart" 
+              className="h-10 w-auto object-contain"
+            />
           </div>
+
           <p className="text-sm leading-relaxed mb-4">
             Your trusted online store for electronics, electricals, hardware, and industrial goods. Best quality at the lowest prices.
           </p>
-          <div className="flex gap-3">
-            <a href="#" className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#FF9900] hover:text-[#131921] flex items-center justify-center transition-colors">
-              <Instagram size={18} />
-            </a>
-            <a href="#" className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#FF9900] hover:text-[#131921] flex items-center justify-center transition-colors">
-              <Facebook size={18} />
-            </a>
-          </div>
         </div>
 
         {/* Quick Links */}
@@ -68,7 +64,6 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             <li><Link to="/cart" className="hover:text-[#FF9900] transition-colors">My Cart</Link></li>
             <li><Link to="/checkout" className="hover:text-[#FF9900] transition-colors">Checkout</Link></li>
-            <li><Link to="/products" className="hover:text-[#FF9900] transition-colors">Track Order</Link></li>
           </ul>
         </div>
 

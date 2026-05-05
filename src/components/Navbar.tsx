@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Search, ShoppingCart, Menu, X } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { categories } from '../data/products';
+import logo from '../assets/logo.png'; // ✅ IMPORT LOGO
 
 export default function Navbar() {
   const { totalItems } = useCart();
@@ -27,6 +28,7 @@ export default function Navbar() {
     <header className={`sticky top-0 z-50 transition-shadow duration-300 ${scrolled ? 'shadow-lg' : ''}`}>
       <nav className="bg-[#131921] text-white">
         <div className="max-w-7xl mx-auto px-4 py-2.5 flex items-center gap-4">
+
           {/* Mobile menu toggle */}
           <button
             className="lg:hidden text-white"
@@ -35,14 +37,13 @@ export default function Navbar() {
             {mobileMenu ? <X size={24} /> : <Menu size={24} />}
           </button>
 
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-1 shrink-0">
-            <div className="w-7 h-7 rounded-full bg-[#FF9900] flex items-center justify-center">
-              <span className="text-[#131921] font-extrabold text-xs">E</span>
-            </div>
-            <span className="text-xl font-bold tracking-tight">
-              EGNARO<span className="text-[#FF9900]">MART</span>
-            </span>
+          {/* ✅ LOGO SECTION UPDATED */}
+          <Link to="/" className="flex items-center gap-2 shrink-0">
+            <img 
+              src={logo} 
+              alt="Egnaro Mart" 
+              className="h-16 w-auto object-contain"
+            />
           </Link>
 
           {/* Search bar */}
@@ -70,7 +71,9 @@ export default function Navbar() {
                 {totalItems}
               </span>
             )}
-            <span className="hidden md:inline text-sm font-medium group-hover:text-[#FF9900] transition-colors">Cart</span>
+            <span className="hidden md:inline text-sm font-medium group-hover:text-[#FF9900] transition-colors">
+              Cart
+            </span>
           </Link>
         </div>
 
